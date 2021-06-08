@@ -87,15 +87,9 @@
 /******/ ({
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/arrays.js":
-<<<<<<< HEAD
 /*!******************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/arrays.js ***!
   \******************************************************************************************/
-=======
-/*!***********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/arrays.js ***!
-  \***********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: tail, tail2, equals, binarySearch, findFirstInSorted, mergeSort, groupBy, coalesce, isFalsyOrEmpty, isNonEmptyArray, distinct, distinctES6, firstIndex, first, firstOrDefault, flatten, range, arrayInsert, pushToStart, pushToEnd, asArray */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -378,15 +372,9 @@ function asArray(x) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/cancellation.js":
-<<<<<<< HEAD
 /*!************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/cancellation.js ***!
   \************************************************************************************************/
-=======
-/*!*****************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/cancellation.js ***!
-  \*****************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: CancellationToken, CancellationTokenSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -510,15 +498,9 @@ class CancellationTokenSource {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/diff/diff.js":
-<<<<<<< HEAD
 /*!*********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/diff/diff.js ***!
   \*********************************************************************************************/
-=======
-/*!**************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/diff/diff.js ***!
-  \**************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: StringDiffSequence, stringDiff, Debug, MyArray, LcsDiff */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1343,15 +1325,9 @@ class LcsDiff {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/diff/diffChange.js":
-<<<<<<< HEAD
 /*!***************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/diff/diffChange.js ***!
   \***************************************************************************************************/
-=======
-/*!********************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/diff/diffChange.js ***!
-  \********************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: DiffChange */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1395,15 +1371,9 @@ class DiffChange {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/errors.js":
-<<<<<<< HEAD
 /*!******************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/errors.js ***!
   \******************************************************************************************/
-=======
-/*!***********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/errors.js ***!
-  \***********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: ErrorHandler, errorHandler, onUnexpectedError, onUnexpectedExternalError, transformErrorForSerialization, isPromiseCanceledError, canceled, illegalArgument, illegalState */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1514,15 +1484,9 @@ function illegalState(name) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/event.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/event.js ***!
   \*****************************************************************************************/
-=======
-/*!**********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/event.js ***!
-  \**********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Event, Emitter, PauseableEmitter, EventBufferer, Relay */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2131,15 +2095,9 @@ class Relay {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/hash.js":
-<<<<<<< HEAD
 /*!****************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/hash.js ***!
   \****************************************************************************************/
-=======
-/*!*********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/hash.js ***!
-  \*********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: hash, doHash, stringHash, StringSHA1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2410,15 +2368,9 @@ StringSHA1._bigBlock32 = new DataView(new ArrayBuffer(320)); // 80 * 4 = 320
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/iterator.js":
-<<<<<<< HEAD
 /*!********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/iterator.js ***!
   \********************************************************************************************/
-=======
-/*!*************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/iterator.js ***!
-  \*************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Iterable */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2509,15 +2461,9 @@ var Iterable;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/keyCodes.js":
-<<<<<<< HEAD
 /*!********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/keyCodes.js ***!
   \********************************************************************************************/
-=======
-/*!*************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/keyCodes.js ***!
-  \*************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: KeyCodeUtils, KeyChord, createKeybinding, createSimpleKeybinding, SimpleKeybinding, ChordKeybinding, ResolvedKeybindingPart, ResolvedKeybinding */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2788,15 +2734,9 @@ class ResolvedKeybinding {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/lifecycle.js":
-<<<<<<< HEAD
 /*!*********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/lifecycle.js ***!
   \*********************************************************************************************/
-=======
-/*!**************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/lifecycle.js ***!
-  \**************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: MultiDisposeError, isDisposable, dispose, combinedDisposable, toDisposable, DisposableStore, Disposable, MutableDisposable, ImmortalReference */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3012,15 +2952,9 @@ class ImmortalReference {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/linkedList.js":
-<<<<<<< HEAD
 /*!**********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/linkedList.js ***!
   \**********************************************************************************************/
-=======
-/*!***************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/linkedList.js ***!
-  \***************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: LinkedList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3156,15 +3090,9 @@ class LinkedList {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/path.js":
-<<<<<<< HEAD
 /*!****************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/path.js ***!
   \****************************************************************************************/
-=======
-/*!*********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/path.js ***!
-  \*********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: win32, posix, normalize, resolve, relative, dirname, basename, extname, sep */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4564,15 +4492,9 @@ const sep = (_process_js__WEBPACK_IMPORTED_MODULE_0__["platform"] === 'win32' ? 
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/platform.js":
-<<<<<<< HEAD
 /*!********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/platform.js ***!
   \********************************************************************************************/
-=======
-/*!*************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/platform.js ***!
-  \*************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: isWindows, isMacintosh, isLinux, isNative, isWeb, isIOS, globals, setImmediate, OS, isLittleEndian */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4707,15 +4629,9 @@ function isLittleEndian() {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/process.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/process.js ***!
   \*******************************************************************************************/
-=======
-/*!************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/process.js ***!
-  \************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: cwd, env, platform */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4744,15 +4660,9 @@ const platform = safeProcess.platform;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/strings.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/strings.js ***!
   \*******************************************************************************************/
-=======
-/*!************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/strings.js ***!
-  \************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: isFalsyOrWhitespace, pad, format, escape, escapeRegExpCharacters, trim, ltrim, rtrim, convertSimple2RegExpPattern, stripWildcards, startsWith, endsWith, createRegExp, regExpLeadsToEndlessLoop, regExpFlags, firstNonWhitespaceIndex, getLeadingWhitespace, lastNonWhitespaceIndex, compare, compareSubstring, compareIgnoreCase, compareSubstringIgnoreCase, isLowerAsciiLetter, isUpperAsciiLetter, equalsIgnoreCase, startsWithIgnoreCase, commonPrefixLength, commonSuffixLength, isHighSurrogate, isLowSurrogate, computeCodePoint, getNextCodePoint, nextCharLength, prevCharLength, decodeUTF8, containsRTL, containsEmoji, isBasicASCII, UNUSUAL_LINE_TERMINATORS, containsUnusualLineTerminators, containsFullWidthCharacter, isFullWidthCharacter, isEmojiImprecise, UTF8_BOM_CHARACTER, startsWithUTF8BOM, containsUppercaseCharacter, singleLetterHash, getGraphemeBreakType, breakBetweenGraphemeBreakType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5561,15 +5471,9 @@ function getGraphemeBreakRawData() {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/types.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/types.js ***!
   \*****************************************************************************************/
-=======
-/*!**********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/types.js ***!
-  \**********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: isArray, isString, isObject, isNumber, isBoolean, isUndefined, isUndefinedOrNull, assertType, assertIsDefined, isFunction, validateConstraints, validateConstraint, getAllPropertyNames, getAllMethodNames, createProxyObject, withNullAsUndefined */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5735,15 +5639,9 @@ function withNullAsUndefined(x) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/uint.js":
-<<<<<<< HEAD
 /*!****************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/uint.js ***!
   \****************************************************************************************/
-=======
-/*!*********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/uint.js ***!
-  \*********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: toUint8, toUint32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5778,15 +5676,9 @@ function toUint32(v) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/uri.js":
-<<<<<<< HEAD
 /*!***************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/uri.js ***!
   \***************************************************************************************/
-=======
-/*!********************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/uri.js ***!
-  \********************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: URI, uriToFsPath */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6388,15 +6280,9 @@ function percentDecode(str) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/base/common/worker/simpleWorker.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/base/common/worker/simpleWorker.js ***!
   \*******************************************************************************************************/
-=======
-/*!************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/base/common/worker/simpleWorker.js ***!
-  \************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: logOnceWebWorkerWarning, SimpleWorkerClient, SimpleWorkerServer, create */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6690,15 +6576,9 @@ function create(postMessage) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/core/characterClassifier.js":
-<<<<<<< HEAD
 /*!**************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/core/characterClassifier.js ***!
   \**************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/core/characterClassifier.js ***!
-  \*******************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: CharacterClassifier, CharacterSet */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6763,15 +6643,9 @@ class CharacterSet {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/core/position.js":
-<<<<<<< HEAD
 /*!***************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/core/position.js ***!
   \***************************************************************************************************/
-=======
-/*!********************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/core/position.js ***!
-  \********************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Position */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6917,15 +6791,9 @@ class Position {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/core/range.js":
-<<<<<<< HEAD
 /*!************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/core/range.js ***!
   \************************************************************************************************/
-=======
-/*!*****************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/core/range.js ***!
-  \*****************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Range */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7298,15 +7166,9 @@ class Range {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/core/selection.js":
-<<<<<<< HEAD
 /*!****************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/core/selection.js ***!
   \****************************************************************************************************/
-=======
-/*!*********************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/core/selection.js ***!
-  \*********************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Selection */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7445,15 +7307,9 @@ class Selection extends _range_js__WEBPACK_IMPORTED_MODULE_1__["Range"] {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/core/token.js":
-<<<<<<< HEAD
 /*!************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/core/token.js ***!
   \************************************************************************************************/
-=======
-/*!*****************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/core/token.js ***!
-  \*****************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Token, TokenizationResult, TokenizationResult2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7493,15 +7349,9 @@ class TokenizationResult2 {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/diff/diffComputer.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/diff/diffComputer.js ***!
   \*******************************************************************************************************/
-=======
-/*!************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/diff/diffComputer.js ***!
-  \************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: DiffComputer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7904,15 +7754,9 @@ function createContinueProcessingPredicate(maximumRuntime) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/model/mirrorTextModel.js":
-<<<<<<< HEAD
 /*!***********************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/model/mirrorTextModel.js ***!
   \***********************************************************************************************************/
-=======
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/model/mirrorTextModel.js ***!
-  \****************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: MirrorTextModel */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8036,15 +7880,9 @@ class MirrorTextModel {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/model/wordHelper.js":
-<<<<<<< HEAD
 /*!******************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/model/wordHelper.js ***!
   \******************************************************************************************************/
-=======
-/*!***********************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/model/wordHelper.js ***!
-  \***********************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: USUAL_WORD_SEPARATORS, DEFAULT_WORD_REGEXP, ensureValidWordDefinition, getWordAtText */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8176,15 +8014,9 @@ function _findRegexMatchEnclosingPosition(wordDefinition, text, pos, stopPos) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/modes/linkComputer.js":
-<<<<<<< HEAD
 /*!********************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/modes/linkComputer.js ***!
   \********************************************************************************************************/
-=======
-/*!*************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/modes/linkComputer.js ***!
-  \*************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Uint8Matrix, StateMachine, LinkComputer, computeLinks */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8464,15 +8296,9 @@ function computeLinks(model) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/modes/supports/inplaceReplaceSupport.js":
-<<<<<<< HEAD
 /*!**************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/modes/supports/inplaceReplaceSupport.js ***!
   \**************************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/modes/supports/inplaceReplaceSupport.js ***!
-  \*******************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: BasicInplaceReplace */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8569,15 +8395,9 @@ BasicInplaceReplace.INSTANCE = new BasicInplaceReplace();
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/services/editorSimpleWorker.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/services/editorSimpleWorker.js ***!
   \*****************************************************************************************************************/
-=======
-/*!**********************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/services/editorSimpleWorker.js ***!
-  \**********************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: EditorSimpleWorker, create */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9093,15 +8913,9 @@ if (typeof importScripts === 'function') {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneBase.js":
-<<<<<<< HEAD
 /*!***************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneBase.js ***!
   \***************************************************************************************************************/
-=======
-/*!********************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneBase.js ***!
-  \********************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: KeyMod, createMonacoBaseAPI */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9163,15 +8977,9 @@ function createMonacoBaseAPI() {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneEnums.js":
-<<<<<<< HEAD
 /*!****************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneEnums.js ***!
   \****************************************************************************************************************/
-=======
-/*!*********************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/standalone/standaloneEnums.js ***!
-  \*********************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: AccessibilitySupport, CompletionItemInsertTextRule, CompletionItemKind, CompletionItemTag, CompletionTriggerKind, ContentWidgetPositionPreference, CursorChangeReason, DefaultEndOfLine, DocumentHighlightKind, EditorAutoIndentStrategy, EditorOption, EndOfLinePreference, EndOfLineSequence, IndentAction, KeyCode, MarkerSeverity, MarkerTag, MinimapPosition, MouseTargetType, OverlayWidgetPositionPreference, OverviewRulerLane, RenderLineNumbersType, RenderMinimap, ScrollType, ScrollbarVisibility, SelectionDirection, SignatureHelpTriggerKind, SymbolKind, SymbolTag, TextEditorCursorBlinkingStyle, TextEditorCursorStyle, TrackedRangeStickiness, WrappingIndent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10023,15 +9831,9 @@ var WrappingIndent;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/common/viewModel/prefixSumComputer.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/common/viewModel/prefixSumComputer.js ***!
   \*****************************************************************************************************************/
-=======
-/*!**********************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/common/viewModel/prefixSumComputer.js ***!
-  \**********************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: PrefixSumIndexOfResult, PrefixSumComputer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10180,15 +9982,9 @@ class PrefixSumComputer {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/editor/editor.worker.js":
-<<<<<<< HEAD
 /*!********************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/editor/editor.worker.js ***!
   \********************************************************************************************/
-=======
-/*!*************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/editor/editor.worker.js ***!
-  \*************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: initialize */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10227,15 +10023,9 @@ self.onmessage = (e) => {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/_deps/vscode-languageserver-types/main.js":
-<<<<<<< HEAD
 /*!**************************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/_deps/vscode-languageserver-types/main.js ***!
   \**************************************************************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/_deps/vscode-languageserver-types/main.js ***!
-  \*******************************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Position, Range, Location, LocationLink, Color, ColorInformation, ColorPresentation, FoldingRangeKind, FoldingRange, DiagnosticRelatedInformation, DiagnosticSeverity, DiagnosticTag, DiagnosticCode, Diagnostic, Command, TextEdit, TextDocumentEdit, CreateFile, RenameFile, DeleteFile, WorkspaceEdit, WorkspaceChange, TextDocumentIdentifier, VersionedTextDocumentIdentifier, TextDocumentItem, MarkupKind, MarkupContent, CompletionItemKind, InsertTextFormat, CompletionItemTag, InsertReplaceEdit, CompletionItem, CompletionList, MarkedString, Hover, ParameterInformation, SignatureInformation, DocumentHighlightKind, DocumentHighlight, SymbolKind, SymbolTag, SymbolInformation, DocumentSymbol, CodeActionKind, CodeActionContext, CodeAction, CodeLens, FormattingOptions, DocumentLink, SelectionRange, EOL, TextDocument */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11868,15 +11658,9 @@ var Is;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-css.js":
-<<<<<<< HEAD
 /*!*********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-css.js ***!
   \*********************************************************************************************************************************************/
-=======
-/*!**************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-css.js ***!
-  \**************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: css_beautify */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13528,15 +13312,9 @@ var css_beautify = legacy_beautify_css;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-html.js":
-<<<<<<< HEAD
 /*!**********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-html.js ***!
   \**********************************************************************************************************************************************/
-=======
-/*!***************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify-html.js ***!
-  \***************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: html_beautify */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16671,15 +16449,9 @@ function html_beautify(html_source, options) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify.js ***!
   \*****************************************************************************************************************************************/
-=======
-/*!**********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/beautify/beautify.js ***!
-  \**********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: js_beautify */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16702,15 +16474,9 @@ function js_beautify(js_source_text, options) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageService.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageService.js ***!
   \*******************************************************************************************************************************************/
-=======
-/*!************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageService.js ***!
-  \************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: TextDocument, Position, Range, Location, LocationLink, Color, ColorInformation, ColorPresentation, FoldingRangeKind, FoldingRange, DiagnosticRelatedInformation, DiagnosticSeverity, DiagnosticTag, DiagnosticCode, Diagnostic, Command, TextEdit, TextDocumentEdit, CreateFile, RenameFile, DeleteFile, WorkspaceEdit, WorkspaceChange, TextDocumentIdentifier, VersionedTextDocumentIdentifier, TextDocumentItem, MarkupKind, MarkupContent, CompletionItemKind, InsertTextFormat, CompletionItemTag, InsertReplaceEdit, CompletionItem, CompletionList, MarkedString, Hover, ParameterInformation, SignatureInformation, DocumentHighlightKind, DocumentHighlight, SymbolKind, SymbolTag, SymbolInformation, DocumentSymbol, CodeActionKind, CodeActionContext, CodeAction, CodeLens, FormattingOptions, DocumentLink, SelectionRange, EOL, TokenType, ScannerState, ClientCapabilities, FileType, getLanguageService, newHTMLDataProvider, getDefaultHTMLDataProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16906,15 +16672,9 @@ function getDefaultHTMLDataProvider() {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageTypes.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageTypes.js ***!
   \*****************************************************************************************************************************************/
-=======
-/*!**********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/htmlLanguageTypes.js ***!
-  \**********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: TextDocument, Position, Range, Location, LocationLink, Color, ColorInformation, ColorPresentation, FoldingRangeKind, FoldingRange, DiagnosticRelatedInformation, DiagnosticSeverity, DiagnosticTag, DiagnosticCode, Diagnostic, Command, TextEdit, TextDocumentEdit, CreateFile, RenameFile, DeleteFile, WorkspaceEdit, WorkspaceChange, TextDocumentIdentifier, VersionedTextDocumentIdentifier, TextDocumentItem, MarkupKind, MarkupContent, CompletionItemKind, InsertTextFormat, CompletionItemTag, InsertReplaceEdit, CompletionItem, CompletionList, MarkedString, Hover, ParameterInformation, SignatureInformation, DocumentHighlightKind, DocumentHighlight, SymbolKind, SymbolTag, SymbolInformation, DocumentSymbol, CodeActionKind, CodeActionContext, CodeAction, CodeLens, FormattingOptions, DocumentLink, SelectionRange, EOL, TokenType, ScannerState, ClientCapabilities, FileType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17115,15 +16875,9 @@ var FileType;
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/data/webCustomData.js":
-<<<<<<< HEAD
 /*!********************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/data/webCustomData.js ***!
   \********************************************************************************************************************************************************/
-=======
-/*!*************************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/data/webCustomData.js ***!
-  \*************************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: htmlData */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23049,15 +22803,9 @@ var htmlData = {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataManager.js":
-<<<<<<< HEAD
 /*!*************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataManager.js ***!
   \*************************************************************************************************************************************************/
-=======
-/*!******************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataManager.js ***!
-  \******************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: HTMLDataManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23096,15 +22844,9 @@ var HTMLDataManager = /** @class */ (function () {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataProvider.js":
-<<<<<<< HEAD
 /*!**************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataProvider.js ***!
   \**************************************************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/dataProvider.js ***!
-  \*******************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: HTMLDataProvider, generateDocumentation */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23233,15 +22975,9 @@ function generateDocumentation(item, doesSupportMarkdown) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/fact.js":
-<<<<<<< HEAD
 /*!******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/fact.js ***!
   \******************************************************************************************************************************************/
-=======
-/*!***********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/languageFacts/fact.js ***!
-  \***********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: VOID_ELEMENTS, isVoidElement */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -23265,15 +23001,9 @@ function isVoidElement(e) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlEntities.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlEntities.js ***!
   \*******************************************************************************************************************************************/
-=======
-/*!************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlEntities.js ***!
-  \************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: entities */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -25526,15 +25256,9 @@ var entities = {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlParser.js":
-<<<<<<< HEAD
 /*!*****************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlParser.js ***!
   \*****************************************************************************************************************************************/
-=======
-/*!**********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlParser.js ***!
-  \**********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: Node, parse */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -25719,15 +25443,9 @@ function parse(text) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlScanner.js":
-<<<<<<< HEAD
 /*!******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlScanner.js ***!
   \******************************************************************************************************************************************/
-=======
-/*!***********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/parser/htmlScanner.js ***!
-  \***********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: createScanner */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26146,15 +25864,9 @@ function createScanner(input, initialOffset, initialState, emitPseudoCloseTags) 
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlCompletion.js":
-<<<<<<< HEAD
 /*!***********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlCompletion.js ***!
   \***********************************************************************************************************************************************/
-=======
-/*!****************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlCompletion.js ***!
-  \****************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: HTMLCompletion */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26746,15 +26458,9 @@ function getWordEnd(s, offset, limit) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFolding.js":
-<<<<<<< HEAD
 /*!********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFolding.js ***!
   \********************************************************************************************************************************************/
-=======
-/*!*************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFolding.js ***!
-  \*************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: getFoldingRanges */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26936,15 +26642,9 @@ function getFoldingRanges(document, context) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFormatter.js":
-<<<<<<< HEAD
 /*!**********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFormatter.js ***!
   \**********************************************************************************************************************************************/
-=======
-/*!***************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlFormatter.js ***!
-  \***************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: format */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27107,15 +26807,9 @@ function isWhitespace(text, offset) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHighlighting.js":
-<<<<<<< HEAD
 /*!*************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHighlighting.js ***!
   \*************************************************************************************************************************************************/
-=======
-/*!******************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHighlighting.js ***!
-  \******************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findDocumentHighlights */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27173,15 +26867,9 @@ function getTagNameRange(tokenType, document, startOffset) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHover.js":
-<<<<<<< HEAD
 /*!******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHover.js ***!
   \******************************************************************************************************************************************/
-=======
-/*!***********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlHover.js ***!
-  \***********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: HTMLHover */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27406,15 +27094,9 @@ function trimQuotes(s) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlLinks.js":
-<<<<<<< HEAD
 /*!******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlLinks.js ***!
   \******************************************************************************************************************************************/
-=======
-/*!***********************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlLinks.js ***!
-  \***********************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findDocumentLinks */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27566,15 +27248,9 @@ function findDocumentLinks(document, documentContext) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlMatchingTagPosition.js":
-<<<<<<< HEAD
 /*!********************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlMatchingTagPosition.js ***!
   \********************************************************************************************************************************************************/
-=======
-/*!*************************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlMatchingTagPosition.js ***!
-  \*************************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findMatchingTagPosition */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27611,15 +27287,9 @@ function findMatchingTagPosition(document, position, htmlDocument) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlRename.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlRename.js ***!
   \*******************************************************************************************************************************************/
-=======
-/*!************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlRename.js ***!
-  \************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: doRename */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27683,15 +27353,9 @@ function isWithinTagRange(node, offset, nodeTag) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSelectionRange.js":
-<<<<<<< HEAD
 /*!***************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSelectionRange.js ***!
   \***************************************************************************************************************************************************/
-=======
-/*!********************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSelectionRange.js ***!
-  \********************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: getSelectionRanges */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27877,15 +27541,9 @@ function getAttributeLevelRanges(document, currNode, currOffset) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSymbolsProvider.js":
-<<<<<<< HEAD
 /*!****************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSymbolsProvider.js ***!
   \****************************************************************************************************************************************************/
-=======
-/*!*********************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSymbolsProvider.js ***!
-  \*********************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findDocumentSymbols */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27938,15 +27596,9 @@ function nodeToName(node) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSyncedRegions.js":
-<<<<<<< HEAD
 /*!**************************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSyncedRegions.js ***!
   \**************************************************************************************************************************************************/
-=======
-/*!*******************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/htmlSyncedRegions.js ***!
-  \*******************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findOnTypeRenameRanges */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27983,15 +27635,9 @@ function findOnTypeRenameRanges(document, position, htmlDocument) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/pathCompletion.js":
-<<<<<<< HEAD
 /*!***********************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/pathCompletion.js ***!
   \***********************************************************************************************************************************************/
-=======
-/*!****************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/services/pathCompletion.js ***!
-  \****************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: PathCompletionParticipant */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28233,15 +27879,9 @@ var PATH_TAG_AND_ATTR = {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/arrays.js":
-<<<<<<< HEAD
 /*!************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/arrays.js ***!
   \************************************************************************************************************************************/
-=======
-/*!*****************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/arrays.js ***!
-  \*****************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: findFirst, binarySearch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28296,15 +27936,9 @@ function binarySearch(array, key, comparator) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/markup.js":
-<<<<<<< HEAD
 /*!************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/markup.js ***!
   \************************************************************************************************************************************/
-=======
-/*!*****************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/markup.js ***!
-  \*****************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: normalizeMarkupContent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28335,15 +27969,9 @@ function normalizeMarkupContent(input) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/object.js":
-<<<<<<< HEAD
 /*!************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/object.js ***!
   \************************************************************************************************************************************/
-=======
-/*!*****************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/object.js ***!
-  \*****************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: isDefined */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28363,15 +27991,9 @@ function isDefined(obj) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/strings.js":
-<<<<<<< HEAD
 /*!*************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/strings.js ***!
   \*************************************************************************************************************************************/
-=======
-/*!******************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-html-languageservice/utils/strings.js ***!
-  \******************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: startsWith, endsWith, commonPrefixLength, repeat, isLetterOrDigit */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28451,15 +28073,9 @@ function isLetterOrDigit(text, index) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-languageserver-textdocument/lib/esm/main.js":
-<<<<<<< HEAD
 /*!*******************************************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-languageserver-textdocument/lib/esm/main.js ***!
   \*******************************************************************************************************************************************/
-=======
-/*!************************************************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-languageserver-textdocument/lib/esm/main.js ***!
-  \************************************************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: TextDocument */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28740,15 +28356,9 @@ function getWellformedEdit(textEdit) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-uri/index.js":
-<<<<<<< HEAD
 /*!************************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-uri/index.js ***!
   \************************************************************************************************************/
-=======
-/*!*****************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/_deps/vscode-uri/index.js ***!
-  \*****************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: URI, uriToFsPath */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29404,15 +29014,9 @@ function percentDecode(str) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/fillers/vscode-nls.js":
-<<<<<<< HEAD
 /*!********************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/fillers/vscode-nls.js ***!
   \********************************************************************************************************/
-=======
-/*!*************************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/fillers/vscode-nls.js ***!
-  \*************************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: loadMessageBundle, config */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29455,15 +29059,9 @@ function config(opt) {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/html.worker.js":
-<<<<<<< HEAD
 /*!*************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/html.worker.js ***!
   \*************************************************************************************************/
-=======
-/*!******************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/html.worker.js ***!
-  \******************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29488,15 +29086,9 @@ self.onmessage = function () {
 /***/ }),
 
 /***/ "../../node_modules/monaco-editor/esm/vs/language/html/htmlWorker.js":
-<<<<<<< HEAD
 /*!************************************************************************************************!*\
   !*** /Users/pyq/workspace/ant/g/node_modules/monaco-editor/esm/vs/language/html/htmlWorker.js ***!
   \************************************************************************************************/
-=======
-/*!*****************************************************************************************************************!*\
-  !*** /Users/ryannz/workspace/github.com/antvis/g/node_modules/monaco-editor/esm/vs/language/html/htmlWorker.js ***!
-  \*****************************************************************************************************************/
->>>>>>> 5435e6cabf22da7fd94963beff70540447d8279c
 /*! exports provided: HTMLWorker, create */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
