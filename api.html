@@ -37,9 +37,9 @@
       <p>
         在设计核心层 API 时，我们更多借鉴了 Web 端已有的标准，例如：
         <ul>
-          <li>场景图定义、事件系统兼容 DOM API</li>
+          <li>场景图定义、事件系统兼容 <a href="https://dom.spec.whatwg.org/">DOM API</a></li>
           <li>动画兼容 <a href='https://drafts.csswg.org/web-animations/'>Web Animation API</a></li>
-          <li>自定义图形机制兼容 CustomElement API</li>
+          <li>自定义图形机制兼容 <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api">CustomElements API</a></li>
         </ul>
         一方面能减轻前端开发者的记忆学习成本，更重要的是能直接使用 Web 端已有生态，例如拖拽与手势库。
       </p>
@@ -70,9 +70,18 @@
         在定义场景时，并不需要渲染器参与。同样的，在组合图形自定义组件时，也应当与具体渲染器无关。
       </p>
       <p>
-        场景图中的节点，也就是我们通常说的“图形”，尽管形状各不相同，有的甚至没有实体，但都是通过继承获得基础能力。
+        场景图中的节点，也就是我们通常说的“图形”，尽管形状各不相同，有的甚至没有实体，但都是通过继承获得基础能力，继承关系如下：
       </p>
-      
+      <dl class="def">
+        <dt>{{Canvas}} -> {{EventTarget}}</dt>
+        <dd>画布通过继承拥有了基础的事件监听能力</dd>
+        <dt>{{Document}} -> {{Node}} -> {{EventTarget}}</dt>
+        <dd>文档通过继承拥有基础的节点管理能力</dd>
+        <dt>{{DisplayObject}} -> {{Element}} -> {{Node}} -> {{EventTarget}}</dt>
+        <dd>可渲染对象拥有更高级的节点管理、动画以及变换能力</dd>
+        <dt>{{Circle}} -> {{DisplayObject}}</dt>
+        <dd>基础图形通过继承拥有了被渲染的能力</dd>
+      </dl>
       <section data-dfn-for="EventTarget">
         <h2>EventTarget</h2>
         <p>为节点提供事件的绑定/解绑以及触发能力。</p>
@@ -214,6 +223,7 @@
           Node                               insertBefore(Node newChild, Node refChild);
           Node                               replaceChild(Node newChild, Node oldChild);
           Node                               removeChild(Node oldChild);
+          undefined                          removeChildren();
           boolean                            isEqualNode(Node otherNode);
           boolean                            isSameNode(Node otherNode);
           Node                               getRootNode();
@@ -436,6 +446,10 @@
             parent.removeChild(child); // [child]
             </pre>
           </aside>
+        </section>
+        <section>
+          <h2><dfn>removeChildren()</dfn> method</h2>
+          <p>删除所有子节点。</p>
         </section>
         <section>
           <h2><dfn>isEqualNode()</dfn> method</h2>
@@ -1127,6 +1141,39 @@
           </pre>
         </aside>
       </section>
+      <section data-dfn-for="CustomElement" data-link-for="CustomElement">
+        <h2>CustomElement</h2>
+        <p>继承 {{DisplayObject}}，自定义组件的基类。</p>
+        <pre class="idl">
+          [Exposed=Window]
+          interface CustomElement : DisplayObject {
+            undefined   connectedCallback();
+            undefined   disconnectedCallback();
+            undefined   attributeChangedCallback(DOMString name, any oldValue, any newValue);
+          };
+        </pre>
+        <section>
+          <h2><dfn>connectedCallback()</dfn> method</h2>
+          <p>该图形加入画布时触发。</p>
+        </section>
+        <section>
+          <h2><dfn>disconnectedCallback()</dfn> method</h2>
+          <p>从画布移除时触发。</p>
+        </section>
+        <section>
+          <h2><dfn>attributeChangedCallback()</dfn> method</h2>
+          <p>属性发生修改时触发。</p>
+          <p>参数列表：</p>
+          <dl class="def">
+            <dt><code>{{DOMString}} name</code></dt>
+            <dd>属性名</dd>
+            <dt><code>{{any}} oldValue</code></dt>
+            <dd>旧属性值</dd>
+            <dt><code>{{any}} newValue</code></dt>
+            <dd>新属性值</dd>
+          </dl>
+        </section>
+      </section>
       <section data-dfn-for="Document" data-link-for="Document">
         <h2>Document</h2>
         <p>在创建画布时同时会创建一个文档对象，可以类比 DOM 环境中的 `window.document`。
@@ -1187,7 +1234,8 @@
           <p>返回默认时间轴，在动画系统中使用。</p>
         </section>
         <section>
-          <h2><dfn>createElement</dfn> method</h2>
+          <h2><dfn>createElement()</dfn> method</h2>
+          <p>创建自定义组件时，需要配合 {{CustomElementRegistry}} 使用。</p>
           <aside class="example">
             <p>创建元素</p>
             <pre class="js">
@@ -1200,14 +1248,257 @@
       </section>
     </section>
     <section data-dfn-for="Canvas">
-      <h2>Canvas</h2>
+      <h2>画布</h2>
+      <p>从渲染的角度上看，它是一个在浏览器中实现的“小浏览器”，承载着以下三类对象：
+        <ul>
+        <li>场景图。我们通过它描述场景中的各个图形及其层次关系。</li>
+        <li>相机。我们通过它定义观察整个场景的角度。我们为每一个画布内置了一个默认使用正交投影的相机，后续可随时修改。</li>
+        <li>渲染器。我们通过它指定画布使用何种底层技术来渲染场景。不同的渲染器有着不同的渲染能力，例如只有 g-webgl 才能渲染 3D 图形。在 2D 场景下我们会尽力实现不同渲染器下一致的渲染效果。</li>
+        </ul>
+      </p>
       <pre class="idl">
       [Exposed=Window]
-      interface Canvas {
-        readonly attribute Document document;
-        undefined resize(long width, long height);
+      interface Canvas : EventTarget {
+        readonly attribute Document              document;
+        readonly attribute CustomElementRegistry customElements;
+        undefined                   resize(long width, long height);
+        Point                       viewport2Client(Point p);
+        Point                       client2Viewport(Point p);
+        Point                       viewport2Canvas(Point p);
+        Point                       canvas2Viewport(Point p);
+        undefined                   appendChild(DisplayObject o);
+        undefined                   removeChild(DisplayObject o);
+        undefined                   removeChildren();
+        Camera                      getCamera();
+      };
+
+      dictionary Point {
+        required double x;
+        required double y;
       };
       </pre>
+      <section>
+        <h2>坐标系</h2>
+        <p>当我们说起“位置”，一定是相对于某个坐标系下而言，在 G 中我们会使用到 [=Client 坐标系=]、[=Screen 坐标系=]、[=Page 坐标系=]、[=Canvas 坐标系=] 以及 [=Viewport 坐标系=]</p>
+        <p>在这些坐标系中，[=Client 坐标系=]、[=Screen 坐标系=]、[=Page 坐标系=] 都是浏览器原生支持的坐标系，因此我们不会对事件对象上的这些坐标值做任何修改。
+          而 Canvas 画布类似在浏览器中实现的一个“小浏览器”，因此它的视口坐标系即 [=Viewport 坐标系=] 就可以类比成浏览器的 [=Client 坐标系=]。
+          而当相机发生移动时，我们的可视范围随之改变，类似页面发生滚动，但图形在世界中的位置并没有改变，因此 [=Canvas 坐标系=]就可以类比成浏览器的 [=Page 坐标系=]。</p>
+        <p>这些坐标系都以左上角为原点，如果使用了 `g-plugin-3d` 插件，Z 轴正向指向屏幕外</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes/canvas_default_grid.png" />
+
+        <section>
+          <h2><dfn>Client 坐标系</dfn></h2>
+          <p>前端开发者最熟悉的应该是 Client 浏览器坐标系，它以浏览器左上角为原点，G 不会修改原生事件对象的这个坐标值。</p>
+          <p>如果文档没有滚动，等同于 Page 坐标，下图展示了与 Screen 的差别：</p>
+          <img src="https://gw.alipayobjects.com/mdn/rms_6ae20b/afts/img/A*TYQJR40KMm0AAAAAAAAAAAAAARQnAQ" />
+        </section>
+        <section>
+          <h2><dfn>Screen 坐标系</dfn></h2>
+          <p>屏幕坐标系也是浏览器常用的坐标系，以屏幕左上角为原点，会受页面滚动影响。G 不会修改原生事件对象的这个坐标值。</p>
+          <p>值得一提的是，在双屏下可能会出现负数，例如在左侧屏幕中。</p>
+        </section>
+        <section>
+          <h2><dfn>Page 坐标系</dfn></h2>
+          <p>以文档左上角为原点，考虑文档滚动，G 不会修改原生事件对象的这个坐标值。</p>
+        </section>
+        <section>
+          <h2><dfn>Canvas 坐标系</dfn></h2>
+          <p>可以类比浏览器的 Client 坐标系，也称作世界坐标系，我们在创建图形时指定的位置均相对于该坐标系。它以画布 DOM 元素的左上角为原点，X 轴正向指向屏幕右侧，Y 轴正向指向屏幕下方。也称作“世界坐标系”，涉及到旋转时，我们设定沿坐标轴正向顺时针为旋转方向。</p>
+        </section>
+        <section>
+          <h2><dfn>Viewport 坐标系</dfn></h2>
+          <p>在浏览器的 Page 坐标系中，不管页面如何滚动，元素在文档中的坐标都不会改变，改变的是我们的可视区域。
+
+            同样的，相机决定了我们观察世界的角度，如果相机没有发生移动，[=Viewport 坐标系=]和 [=Canvas 坐标系=]将完全重合，因此在我们的可见范围内，视口左上角坐标与 [=Canvas 坐标系=]原点一样，都是 `[0, 0]`。但如果相机发生了平移、旋转、缩放，视口也会发生相应变化，此时视口左上角 `[0, 0]` 对应 Canvas 坐标系下的位置就不再是 `[0, 0]` 了。</p>
+        </section>
+        <section>
+          <h2>Client 与 Viewport 转换</h2>
+          <p>在内部实现中，我们使用了以下计算逻辑，例如从 Client 到 Viewport：
+            <ul>
+              <li>首先获取画布 DOM 元素在 [=Client 坐标系=]下的包围盒，使用到了 {{Element/getBoundingClientRect()}}</li>
+              <li>然后用 clientX/Y 减去包围盒左上角坐标，就得到了相对画布 DOM 元素左上角的坐标，即 Viewport 坐标</li>
+            </ul>
+            <aside class="example">
+              <p>从 Client 到 Viewport 坐标系转换</p>
+              <pre class="js">
+              // 获取画布 DOM 元素在 Client 坐标系下的包围盒
+              // @see https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+              const bbox = $canvas.getBoundingClientRect();
+  
+              viewportX = clientX - bbox.left;
+              viewportY = clientY - bbox.top;
+              </pre>
+            </aside>
+          <section>
+            <h2><dfn>viewport2Client()</dfn> method</h2>
+            <p></p>
+          </section>
+          <section>
+            <h2><dfn>client2Viewport()</dfn> method</h2>
+            <p></p>
+          </section>
+          <aside class="example">
+            <p>Viewport 坐标系与 Client 坐标系转换</p>
+            <pre class="js">
+            canvas.viewport2Client({ x: 0, y: 0 }); // Point { x: 100, y: 100 }
+            canvas.client2Viewport({ x: 100, y: 100 }); // Point { x: 0, y: 0 }
+            </pre>
+          </aside>
+        </section>
+        <section>
+          <h2>Canvas 与 Viewport 转换</h2>
+          <p>相机决定了我们观察世界的角度，如果相机没有发生移动，[=Viewport 坐标系=]和 [=Canvas 坐标系=]将完全重合，
+            因此在我们的可见范围内，视口左上角坐标与 Canvas 坐标系原点一样，都是 `[0, 0]`。
+            但如果相机发生了平移、旋转、缩放，视口也会发生相应变化，此时视口左上角 `[0, 0]` 对应 Canvas 坐标系下的位置就不再是 `[0, 0]` 了。</p>
+          <p>在内部实现中，我们使用了以下计算逻辑，例如从 Canvas 到 Viewport，经历从世界坐标系到裁剪坐标系，再到 NDC，最后到视口坐标系的变换：</p>
+          <aside class="example">
+            <p>从 Canvas 到 Viewport 坐标系转换</p>
+            <pre class="js">
+            // 计算相机 VP 矩阵
+            const camera = canvas.getCamera();
+            const projectionMatrix = camera.getPerspective();
+            const viewMatrix = camera.getViewTransform();
+            const vpMatrix = mat4.multiply(mat4.create(), projectionMatrix, viewMatrix);
+            
+            // 世界坐标系（Canvas） -> 裁剪坐标系（Clip）
+            const clip = vec3.fromValues(canvasX, canvasY, 0);
+            vec3.transformMat4(clip, clip, vpMatrix);
+            
+            // Clip -> NDC -> Viewport 同时翻转 Y 轴
+            const { width, height } = this.canvasConfig; // 画布宽高
+            viewportX = ((clip[0] + 1) / 2) * width;
+            viewportY = (1 - (clip[1] + 1) / 2) * height;
+            </pre>
+          </aside>
+          <section>
+            <h2><dfn>viewport2Canvas()</dfn> method</h2>
+            <p></p>
+          </section>
+          <section>
+            <h2><dfn>canvas2Viewport()</dfn> method</h2>
+            <p></p>
+          </section>
+        </section>
+      </section>
+      <section>
+        <h2>画布事件</h2>
+        <p>画布同样具有事件监听能力，除了交互事件，还包括一些画布特有事件，它们在画布的渲染、销毁等生命周期中触发。</p>
+        <pre class="idl">
+          dictionary CanvasEvent {
+            DOMString BEFORE_RENDER = "beforerender";
+            DOMString AFTER_RENDER = "afterrender";
+            DOMString BEFORE_DESTROY = "beforedestroy";
+            DOMString AFTER_DESTROY = "afterdestroy";
+          };
+        </pre>
+        <aside class="example">
+          <p>监听画布事件</p>
+          <pre class="js">
+          canvas.addEventListener(CanvasEvent.AFTER_RENDER, () => {
+            stats.update();
+          });
+          </pre>
+        </aside>
+      </section>
+      <section>
+        <h2>添加/删除节点</h2>
+        <p>加入画布的节点将会被立即渲染。</p>
+        <section>
+          <h2><dfn>appendChild()</dfn> method</h2>
+          <p></p>
+        </section>
+        <section>
+          <h2><dfn>removeChild()</dfn> method</h2>
+          <p></p>
+        </section>
+        <section>
+          <h2><dfn>removeChildren()</dfn> method</h2>
+          <p></p>
+        </section>
+      </section>
+      <section>
+        <h2><dfn>getCamera()</dfn> method</h2>
+        <p>获取默认相机，每个画布在创建时都会同时创建一个默认相机，使用正交投影。</p>
+        <p>返回值：</p>
+        <dl class="def">
+          <dt><code>{{Camera}}</code></dt>
+          <dd>默认相机</dd>
+        </dl>
+      </section>
+      <section data-dfn-for="CustomElementRegistry">
+        <h2>自定义组件注册</h2>
+        <p>自定义组件完成注册后，就可以使用 {{Document/createElement()}} 创建。</p>
+        <pre class="idl">
+        [Exposed=Window]
+        interface CustomElementRegistry {
+          undefined define(DOMString name, CustomElementConstructor constructor);
+          (CustomElementConstructor or undefined) get(DOMString name);
+        };
+
+        callback CustomElementConstructor = DisplayObject ();
+        </pre>
+        <aside class="example">
+          <p>注册自定义组件并创建</p>
+          <pre class="js">
+            // 注册
+            canvas.customElements.define(MyCustomShape.tag, MyCustomShape);
+            // 创建
+            const myCustomShape = canvas.document.createElement(MyCustomShape.tag, {});
+          </pre>
+        </aside>
+        <section>
+          <h2><dfn>define()</dfn> method</h2>
+          <p>参数列表：</p>
+          <dl class="def">
+            <dt><code>{{DOMString}} name</code></dt>
+            <dd>组件名字符串</dd>
+            <dt><code>{{CustomElementConstructor}} constructor</code></dt>
+            <dd>自定义组件构造函数，需要继承 {{CustomElement}}</dd>
+          </dl>
+        </section>
+        <section>
+          <h2><dfn>get()</dfn> method</h2>
+          <p>参数列表：</p>
+          <dl class="def">
+            <dt><code>{{DOMString}} name</code></dt>
+            <dd>组件名字符串</dd>
+          </dl>
+          <p>返回值：</p>
+          <dl class="def">
+            <dt><code>{{CustomElementConstructor}}</code></dt>
+            <dd>自定义组件构造函数</dd>
+          </dl>
+        </section>
+      </section>
+    </section>
+    <section data-dfn-for="Camera">
+      <h2>相机</h2>
+      <p>相机描述了我们观察世界的角度。视点、相机位置都会影响最终的成像。</p>
+      <section data-dfn-for="Camera">
+        <h2>Camera</h2>
+        <pre class="idl">
+        [Exposed=(Window)]
+        interface Camera {
+          undefined       setOrthographic(double left, double right, double top, double bottom, double near, double far);
+          undefined       setPerspective(double near, double far, double fov, double aspect);
+          undefined       setPosition((double or sequence&lt;double&gt;) x, double? y, double? z);
+          undefined       setFocalPosition((double or sequence&lt;double&gt;) x, double? y, double? z);
+          undefined       setNear(double near);
+          undefined       setFar(double far);
+          undefined       setFov(double fov);
+          undefined       setAspect(double aspect);
+          undefined       setZoom(double zoom);
+          undefined       setRoll(double angle);
+          undefined       setElevation(double angle);
+          undefined       setAzimuth(double angle);
+          undefined       pan(double tx, double ty);
+          undefined       dolly(double distance);
+          undefined       rotate(double azimuth, double elevation, double roll);
+          Landmark        createLandmark(DOMString name, LandmarkParams params);
+          undefined       gotoLandmark(DOMString name, double? duration);
+        };
+        </pre>
+      </section>
     </section>
     <section data-dfn-for="Event">
       <h2>事件</h2>
